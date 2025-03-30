@@ -11,7 +11,7 @@ import type {
 export const identity: Identity = {
   name: "Public Impact Partners",
   logo: "/logo2.webp",
-  email: "tim@witzdam.com",
+  email: "chelsey@publicimpactpartners.com",
 };
 
 export const navBarLinks: NavBarLink[] = [
@@ -42,7 +42,7 @@ export const socialLinks: SocialLink[] = [
   },
   {
     title: "Mail",
-    url: "mailto:tim@witzdam.com",
+    url: "mailto:chelsey@publicimpactpartners.com",
     icon: "mdi:email",
   },
 ];
