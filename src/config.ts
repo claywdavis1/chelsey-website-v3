@@ -9,8 +9,8 @@ import type {
 } from "./types/config";
 
 export const identity: Identity = {
-  name: "Tim Witzdam",
-  logo: "/logo.webp",
+  name: "Public Impact Partners",
+  logo: "/logo2.webp",
   email: "tim@witzdam.com",
 };
 
@@ -28,8 +28,8 @@ export const navBarLinks: NavBarLink[] = [
     url: "/projects",
   },
   {
-    title: "Blog",
-    url: "/blog",
+    title: "Contact",
+    url: "/contact",
   },
 ];
 
@@ -50,7 +50,7 @@ export const socialLinks: SocialLink[] = [
 // Home (/)
 export const homePageContent: HomePageContent = {
   seo: {
-    title: "Tim Witzdam",
+    title: "Public Impact Partners",
     description:
       "Full time student from Germany who loves building cool things using code.",
     image: identity.logo,
@@ -74,7 +74,7 @@ export const homePageContent: HomePageContent = {
 // About (/about)
 export const aboutPageContent: AboutPageContent = {
   seo: {
-    title: "About | Tim Witzdam",
+    title: "About | Public Impact Partners",
     description:
       "Full time student from Germany who loves building cool things using code.",
     image: identity.logo,
@@ -127,7 +127,7 @@ Facere quibusdam reiciendis, distinctio sunt praesentium error accusantium conse
 // Projects (/projects)
 export const projectsPageContent: ProjectPageContent = {
   seo: {
-    title: "Projects | Tim Witzdam",
+    title: "Projects | Public Impact Partners",
     description: "Check out what I've been working on.",
     image: identity.logo,
   },
