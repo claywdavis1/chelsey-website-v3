@@ -1,10 +1,12 @@
 ---
 import { Image } from "astro:assets";
+import { Picture } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import { homePageContent, identity } from "../config";
 import SocialLink from "../components/SocialLink.astro";
 import Link from "../components/Link.astro";
 import { getCollection } from "astro:content";
+import headshot from '../headshot_cropped.jpeg';
 
 const posts = await getCollection("posts");
 posts.sort((a, b) => {
@@ -14,35 +16,23 @@ posts.sort((a, b) => {
 });
 posts.splice(2)
 ---
-
+<style>
+  h1 {font-family: 'Edelsans', sans-serif;}
+</style>
 <Layout seo={homePageContent.seo}>
   <section class="mt-10 max-w-2xl mx-auto px-6">
-    <h1 class="font-bold text-3xl mb-1">{identity.name}</h1>
+    <!-- Title -->
+ 
+    <h1 class="text-3xl mb-1">{identity.name}</h1>
+
+    <!-- Description -->
     <p class="opacity-60 mb-10">{homePageContent.role}</p>
-    <div class="flex flex-col min-[520px]:flex-row gap-6 mb-8">
-      <Image
-        src={identity.logo}
-        alt={identity.name}
-        width={150}
-        height={100}
-        class="rounded-full"
-      />
-      <div class="group flex flex-col justify-center gap-2 w-fit">
-        {
-          homePageContent.socialLinks.map((link) => (
-            <SocialLink
-              title={link.title}
-              url={link.url}
-              icon={link.icon}
-              external={link.external}
-            />
-          ))
-        }
-      </div>
-    </div>
+    
+    <!-- Homepage Text -->
     <p class="max-w-md mb-8">
       {homePageContent.description}
     </p>
+    <!-- Links at bottom -->
     <div class="flex items-center gap-4 group w-fit">
       {
         homePageContent.links.map((link) => (
@@ -51,6 +41,8 @@ posts.splice(2)
       }
     </div>
   </section>
+  
+  <!-- BLOG POSTS
   <section class="mt-20 max-w-2xl mx-auto px-6">
     <h2 class="mb-8">Latest Posts</h2>
     <div class="grid grid-cols-1 gap-10 sm:gap-6 mb-10">
@@ -85,5 +77,5 @@ posts.splice(2)
         >View all</a
       >
     </div>
-  </section>
+  </section> -->
 </Layout>

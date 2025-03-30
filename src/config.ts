@@ -24,8 +24,8 @@ export const navBarLinks: NavBarLink[] = [
     url: "/about",
   },
   {
-    title: "Projects",
-    url: "/projects",
+    title: "Services",
+    url: "/services",
   },
   {
     title: "Contact",
@@ -55,18 +55,21 @@ export const homePageContent: HomePageContent = {
       "Full time student from Germany who loves building cool things using code.",
     image: identity.logo,
   },
-  role: "Student & Software Developer",
+  role: "Homelessness and Continuum of Care Consulting",
   description:
-    "I'm Tim Witzdam, a full time student from Germany who also loves building cool things using code.",
+    "We primarily provide technical assistance and consulting for organiztions working in homelessness. We provide governments, non-profits, and continuum's of care (COCs) with evidence based approaches to fight and end homelessness. Public Impact Partners also provides research and technical document creation.",
   socialLinks: socialLinks,
   links: [
     {
-      title: "My Projects",
-      url: "/projects",
+      title: "About",
+      url: "/about",
+    },{
+      title: "Services",
+      url: "/services",
     },
     {
-      title: "About Me",
-      url: "/about",
+      title: "Contact",
+      url: "/contact",
     },
   ],
 };
