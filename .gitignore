@@ -19,3 +19,10 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+
+# for build
+# package-lock.json
+
+# wrangler files
+.wrangler
+.dev.vars
