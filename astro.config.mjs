@@ -3,6 +3,8 @@ import tailwind from "@astrojs/tailwind";
 import icon from "astro-icon";
 import { remarkReadingTime } from "./remark-reading-time.mjs";
 import node from "@astrojs/node";
+import mdx from "@astrojs/mdx";
+import sitemap from "@astro/sitemap";
 
 import cloudflare from "@astrojs/cloudflare";
 
@@ -10,8 +12,10 @@ import cloudflare from "@astrojs/cloudflare";
 export default defineConfig({
   integrations: [tailwind(), icon()],
   output: "server",
-  adapter: node({
-    mode: "standalone",
+  adapter: cloudflare({
+    platformProxy: {
+      enabled: true,
+    },
   }),
   markdown: {
     remarkPlugins: [remarkReadingTime],
