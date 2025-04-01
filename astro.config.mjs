@@ -4,7 +4,6 @@ import icon from "astro-icon";
 import { remarkReadingTime } from "./remark-reading-time.mjs";
 import node from "@astrojs/node";
 import mdx from "@astrojs/mdx";
-import sitemap from "@astro/sitemap";
 
 import cloudflare from "@astrojs/cloudflare";
 
