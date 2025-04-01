@@ -44,6 +44,6 @@
     "@iconify-json/mdi": "^1.1.64",
     "@tailwindcss/typography": "^0.5.12",
     "@cloudflare/workers-types": "^4.20250204.0",
-    "wrangler": "3.107.3"
+    "wrangler": "4.6.0"
   }
 }
