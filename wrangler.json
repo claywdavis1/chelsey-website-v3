@@ -2,7 +2,11 @@
     "name": "chelsey-website",
     "compatibility_date": "2024-11-01",
     "compatibility_flags": ["nodejs_compat"],
-    "main": "src/index.js",
+    "main": "./dist/_worker.js/index.js",
+    "assets": {
+      "directory": "./dist",
+      "binding": "ASSETS"
+    },
 
     "observability": {
       "enabled": true
